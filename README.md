@@ -1,54 +1,60 @@
+# 💰 Personal Finance Assistant - AI Agent
 
-# Personal Finance Assistant
+A smart AI-powered web app that helps users manage their personal expenses efficiently with features like:
 
-An AI-powered tool for managing personal finances with features like budget recommendations, expense categorization, and forecasting. Developed to enhance my AI/ML skills.
+- 🔍 Predictive Expense Categorization (using NLP)
+- 📊 Personalized Budget Recommendations (ML Regression)
+- 📈 Expense Forecasting (LSTM Neural Networks)
+- 📉 Anomaly Detection (Isolation Forest)
+- 🧾 OCR-based Receipt Scanning
+- 📅 Visual Analytics
+- 🎯 Saving Goals Tracker
+- 💱 INR/USD Currency Toggle
 
-----------
+---
 
-## Features
+## 🚀 How to Run
 
--   **Predictive Expense Categorization**: Classifies expenses based on transaction descriptions.
--   **Budget Recommendations**: Suggests monthly budgets based on income and past expenses.
--   **Expense Forecasting**: Predicts future expenses using time-series analysis.
+### 1️⃣ Clone the repository:
 
-----------
+```bash
+git clone https://github.com/yourusername/personal-finance-assistant-ai-agent.git
+cd personal-finance-assistant-ai-agent
+```
 
-## Tech Stack
+2️⃣Create a virtual environment and install dependencies:
 
--   **Backend**: Python
--   **ML Libraries**: NumPy, Pandas, Scikit-learn, Statsmodels
--   **Interface**: Streamlit
+```bash
+python -m venv venv
+venv\Scripts\activate        # On Windows
+source venv/bin/activate     # On Linux/Mac
 
-----------
+pip install -r requirements.txt
+```
 
-## Steps to Run
+3️⃣Run the app:
 
-1. (Optional) Add more data in the `data` folder
-2. (Optional)Train models:
-    
-    ```bash
-    python training/train_classifier.py
-    python training/train_regressor.py
-    python training/train_forecaster.py 
-    ```
-3.  Run the app:
-    
-    ```bash
-    streamlit run main.py
-    ```
-    
-4.  Access the app at `http://localhost:8501`.
+```bash
+streamlit run main.py
+```
 
-----------
+📂 Folder Structure
+├── data/
+├── models/
+├── training/
+├── utils/
+├── venv/ (excluded from GitHub)
+├── main.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 
-## Machine Learning Models
+---
 
--   **Predictive Expense Categorization**: Logistic Regression
--   **Budget Recommendations**: Linear Regression
--   **Expense Forecasting**: Exponential Smoothing (Time-Series)
+## Dependencies
 
-----------
+Generate it using:
 
-## License
-
-[MIT](LICENSE) License. 
+```bash
+pip freeze > requirements.txt
+```
